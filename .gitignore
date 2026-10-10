@@ -1,0 +1,12 @@
+# Installed packages (re-created with "npm install")
+node_modules/
+
+# Secret settings - never upload to GitHub
+.env
+
+# Build output
+dist/
+
+# Logs and OS files
+*.log
+.DS_Store
