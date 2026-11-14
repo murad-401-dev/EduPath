@@ -6,9 +6,14 @@ const programSchema = new mongoose.Schema({
   country: { type: String, required: true },
   degree: { type: String, required: true },
   subject: { type: String, required: true },
-  tuition: { type: Number, required: true },
+  tuition: { type: Number },
+  tuitionNote: { type: String },
   duration: { type: String },
-  applicationUrl: { type: String }
+  applicationUrl: { type: String, required: true },
+  minCgpa: { type: Number },
+  minIelts: { type: Number },
+  requirements: { type: String },
+  lastVerified: { type: Date, required: true }
 });
 
 module.exports = mongoose.model("Program", programSchema);
