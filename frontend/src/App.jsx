@@ -8,6 +8,10 @@ import AcademicInfo from "./pages/AcademicInfo.jsx";
 import StudyPreferences from "./pages/StudyPreferences.jsx";
 import ProfileManagement from "./pages/ProfileManagement.jsx";
 import ProgramSearch from "./pages/ProgramSearch.jsx";
+import EligibilityCheck from "./pages/EligibilityCheck.jsx";
+import ProgramMatches from "./pages/ProgramMatches.jsx";
+import Scholarships from "./pages/Scholarships.jsx";
+import Shortlist from "./pages/Shortlist.jsx";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("token"));
@@ -39,6 +43,10 @@ function App() {
           <div className="nav-links">
             <Link to="/dashboard">Home</Link>
             <Link to="/programs">Program Search</Link>
+            <Link to="/eligibility">Eligibility</Link>
+            <Link to="/matches">Matches</Link>
+            <Link to="/scholarships">Scholarships</Link>
+            <Link to="/shortlist">Shortlist</Link>
 
             <div className="menu">
               <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>
@@ -69,6 +77,11 @@ function App() {
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/profile" element={<ProfileManagement />} />
           <Route path="/programs" element={<ProgramSearch />} />
+
+          <Route path="/eligibility" element={<EligibilityCheck />} />
+          <Route path="/matches" element={<ProgramMatches />} />
+          <Route path="/scholarships" element={<Scholarships />} />
+          <Route path="/shortlist" element={<Shortlist />} />
         </Routes>
       </main>
     </div>
