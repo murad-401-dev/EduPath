@@ -1,8 +1,9 @@
 const express = require("express");
-const { getPrograms } = require("../controllers/programController");
+const { getPrograms, getSubjects } = require("../controllers/programController");
 
 const router = express.Router();
 
 router.get("/", getPrograms);
+router.get("/subjects", getSubjects);
 
 module.exports = router;

@@ -20,7 +20,10 @@ const userSchema = new mongoose.Schema(
     preferredSubject: { type: String },
     budget: { type: Number },
     intake: { type: String },
-    researchInterest: { type: String }
+    researchInterest: { type: String },
+
+    shortlistedPrograms: [{ type: mongoose.Schema.Types.ObjectId, ref: "Program" }],
+    shortlistedScholarships: [{ type: mongoose.Schema.Types.ObjectId, ref: "Scholarship" }]
   },
   { timestamps: true }
 );
