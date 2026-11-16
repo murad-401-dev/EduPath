@@ -33,6 +33,8 @@ EduPath helps students find suitable MSc/PhD programs and scholarships, check el
 
 ## Module 2 Progress
 
+Module 2 is complete and merged into `main` (14 November 2026).
+
 | Feature | Status |
 |---|---|
 | FR-05 AI-Based Program Eligibility Checking (Gemini) | Done (needs `GEMINI_API_KEY`) |
